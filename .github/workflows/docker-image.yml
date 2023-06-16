@@ -16,6 +16,6 @@ jobs:
     - uses: docker/build-push-action@v4.1.1
       with:
         file: ./Dockerfile.dev
-        tag: snowtreetree/docker-t
+        tags: snowtreetree/docker-t
     - name: npm run lint
       run: docker run -e CI=true snowtreetree/docker-t npm run lint
