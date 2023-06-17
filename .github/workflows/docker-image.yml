@@ -21,15 +21,15 @@ jobs:
       run: docker run -e CI=true snowtreetree/docker-t npm run lint
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v4.1.8
-        with:
-          # Private key part of an SSH key pair
-          SSH_PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
-          # Remote host
-          REMOTE_HOST: ${{secret.REMOTE_HOST}}
-          # Remote user
-          REMOTE_USER: root
-          SOURCE: dist/
-          TARGET: docker-t
+      with:
+        # Private key part of an SSH key pair
+        SSH_PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
+        # Remote host
+        REMOTE_HOST: ${{secret.REMOTE_HOST}}
+        # Remote user
+        REMOTE_USER: root
+        SOURCE: dist/
+        TARGET: docker-t
 
           
           
