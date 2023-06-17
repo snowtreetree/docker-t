@@ -19,6 +19,8 @@ jobs:
 #         tags: snowtreetree/docker-t
 #     - name: npm run build
 #       run: docker run snowtreetree/docker-t npm run lint
+    - name: pwd
+      run: pwd
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v4.1.8
       with:
