@@ -18,7 +18,7 @@ jobs:
         file: ./Dockerfile.dev
         tags: snowtreetree/docker-t
     - name: npm run build
-      run: docker run -e CI=true snowtreetree/docker-t npm run lint
+      run: npm run build
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v4.1.8
       with:
