@@ -20,7 +20,7 @@ jobs:
     - name: npm run build
       run: docker run snowtreetree/docker-t npm run lint
     - name: ls
-      run: ls -a
+      run: cd ../../ & ls -a
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v4.1.8
       with:
