@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker/build-push-action@v4.1.1
-      with:
-        file: ./Dockerfile.dev
-        tags: snowtreetree/docker-t
-    - name: npm run build
-      run: docker run snowtreetree/docker-t npm run lint
+#     - uses: docker/build-push-action@v4.1.1
+#       with:
+#         file: ./Dockerfile.dev
+#         tags: snowtreetree/docker-t
+#     - name: npm run build
+#       run: docker run snowtreetree/docker-t npm run lint
     - name: ls
       run: cd ../../ & ls -a
     - name: ssh deploy
