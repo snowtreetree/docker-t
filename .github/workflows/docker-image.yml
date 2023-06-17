@@ -22,7 +22,7 @@ jobs:
     - name: pwd
       run: pwd 
     - name: cd 
-      run: cd ../ & ls -a
+      run: cd ../ & ls -a & pwd
     - name: ssh deploy
       uses: easingthemes/ssh-deploy@v4.1.8
       with:
