@@ -32,7 +32,6 @@ jobs:
         SSH_PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
         # Remote host
         REMOTE_HOST: 106.14.156.134
-        ARGS: "-avzr --delete"
         # Remote user
         REMOTE_USER: root
         TARGET: docker-t
