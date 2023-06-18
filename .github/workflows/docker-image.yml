@@ -35,7 +35,6 @@ jobs:
         ARGS: "-avzr --delete"
         # Remote user
         REMOTE_USER: root
-        SOURCE: src/
         TARGET: docker-t
 
           
