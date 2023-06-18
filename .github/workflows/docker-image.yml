@@ -31,7 +31,7 @@ jobs:
         # Private key part of an SSH key pair
         SSH_PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
         # Remote host
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_HOST: 106.14.156.134
         ARGS: "-avzr --delete"
         # Remote user
         REMOTE_USER: root
