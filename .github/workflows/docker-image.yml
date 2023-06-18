@@ -19,6 +19,8 @@ jobs:
 #         tags: snowtreetree/docker-t
 #     - name: npm run build
 #       run: docker run snowtreetree/docker-t npm run lint
+    - name: Checkout
+      uses: actions/checkout@v3.5.3
     - name: pwd
       run: pwd 
     - name: cd 
