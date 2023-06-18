@@ -34,8 +34,8 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         # Remote user
         REMOTE_USER: root
-        SOURCE: "./src"
-        TARGET: "docker-t"
+        SOURCE: ./
+        TARGET: docker-t
 
           
           
