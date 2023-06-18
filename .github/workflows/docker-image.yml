@@ -32,6 +32,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
         # Remote host
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        ARGS: "-avzr --delete"
         # Remote user
         REMOTE_USER: root
         SOURCE: src/
